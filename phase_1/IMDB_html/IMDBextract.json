@@ -1,0 +1,77 @@
+{
+	"data_extract_path": 
+		[
+			{
+				"colName": "Name",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[2]/div[2]/div/div[2]/div[2]/h1/text()"
+			},
+			{
+				"colName": "Year",
+				"xPathString": "//*[@id=\"titleYear\"]/a/text()"
+			},
+			{
+				"colName": "Director",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[2]/span/a/span/text()"
+			},
+			{
+				"colName": "Writer",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[3]/span/a/span/text()"
+									
+			},
+			{
+				"colName": "Cast",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[4]/span/a/span/text()"
+			},
+			{
+				"colName": "Audience Rating",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[4]/span[2]/a/span/text()"
+			},
+			{
+				"colName": "Description",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[1]/text()"
+			},
+			{
+				"colName": "Popularity",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[2]/div[5]/div[2]/div[2]/span/text()[1]/text()"
+			},
+			{
+				"colName": "Storyline",
+				"xPathString": "//*[@id=\"titleStoryLine\"]/div[1]/p/text()"
+			},
+			{
+				"colName": "Genres",
+				"xPathString": "//*[@id=\"titleStoryLine\"]/div[4]/a[1]/text()"
+			},
+			{
+				"colName": "Country",
+				"xPathString": "//*[@id=\"titleDetails\"]/div[2]/a/text()"
+			},
+			{
+				"colName": "Language",
+				"xPathString": "//*[@id=\"titleDetails\"]/div[3]/a/text()"
+			},
+			{
+				"colName": "Filming Locations",
+				"xPathString" : "//*[@id=\"titleDetails\"]/div[6]/a/text()"
+			},
+			{
+				"colName": "Release Date",
+				"xPathString" : "//*[@id=\"titleDetails\"]/div[4]/text()"
+			},
+			{
+				"colName": "Profit",
+				"xPathString" : "//*[@id=\"titleDetails\"]/div[9]/text()"
+			},
+			{
+				"colName": "Production",
+				"xPathString" : "//*[@id=\"titleDetails\"]/div[10]/span/a/span/text()"
+			},
+			{
+				"colName":"Duration",
+				"xPathString" : "//*[@id=\"titleDetails\"]/div[12]/time[1]/text()"
+			}
+			
+
+
+		]
+}
