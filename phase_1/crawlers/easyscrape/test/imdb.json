@@ -1,0 +1,78 @@
+{
+    "save_html_to_directory": false,
+    "save_data_to_csv": true,
+    "allowed_domains": ["www.imdb.com"],
+    "start_urls": ["http://www.imdb.com/"],
+    "csv_output_file": "IMDB_scrape_data.csv",
+    "html_directory_name": "IMDB_html_files",
+    "save_file_regex": "([^/]+)\\/?$",
+    "remove_url_query": true,
+    "deny_page_regex": [],
+    "allow_page_regex": ["com\\/title\\/tt\\d+\\/?$"],
+    "randomize_download_delay": 1,
+    "download_delay": 0.1,
+    "depth_priority": 1,
+	"data_extract_path": 
+		[
+			{
+				"colName": "Title",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[2]/div[2]/div/div/div[2]/h1/text()|//*[@id=\"overview-top\"]/h1/span[1]/text()"
+			},
+			{
+				"colName": "Category",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[2]/div[2]/div/div/div[2]/div/a/span/text()|//*[@id=\"overview-top\"]/div[2]/a/span/text()"
+			},
+			{
+				"colName": "Duration",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[2]/div[2]/div/div/div[2]/div/time/text()|//*[@id=\"overview-top\"]/div[2]/time/text()"
+			},
+			{
+				"colName": "Rating",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[2]/div[2]/div/div[1]/div[1]/div[1]/strong/span/text()|//*[@id=\"overview-top\"]/div[3]/div[3]/strong/span/text()"
+			},
+			{
+				"colName": "Rating Count",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[2]/div[2]/div/div[1]/div[1]/a/span/text()|//*[@id=\"overview-top\"]/div[3]/div[3]/a[1]/span/text()"
+			},
+			{
+				"colName": "Director",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[h4/text()=\"Director:\" or h4/text()=\"Directors:\"]/span/a/span/text()|//*[@id=\"overview-top\"]/div[h4/text()=\"Director:\" or h4/text()=\"Directors:\"]/a/span/text()|//*[@id=\"title-overview-widget\"]/div[3]/div[2]/div[1]/div[h4/text()=\"Director:\" or h4/text()=\"Directors:\"]/span/a/span/text()"
+			},
+			{
+				"colName": "Creator",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[h4/text()=\"Creator:\" or h4/text()=\"Creators:\"]/span/a/span/text()|//*[@id=\"overview-top\"]/div[h4/text()=\"Creator:\" or h4/text()=\"Creators:\"]/a/span/text()|//*[@id=\"title-overview-widget\"]/div[3]/div[2]/div[1]/div[h4/text()=\"Creator:\" or h4/text()=\"Creators:\"]/span/a/span/text()"
+			},
+			{
+				"colName": "Writer",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[h4/text()=\"Writer:\" or h4/text()=\"Writers:\"]/span/a/span/text()|//*[@id=\"overview-top\"]/div[h4/text()=\"Writer:\" or h4/text()=\"Writers:\"]/a/span/text()|//*[@id=\"title-overview-widget\"]/div[3]/div[2]/div[1]/div[h4/text()=\"Writer:\" or h4/text()=\"Writers:\"]/span/a/span/text()"
+			},
+			{
+				"colName": "Stars",
+				"xPathString": "//*[@id=\"title-overview-widget\"]/div[3]/div[1]/div[h4/text()=\"Star:\" or h4/text()=\"Stars:\"]/span/a/span/text()|//*[@id=\"overview-top\"]/div[h4/text()=\"Star:\" or h4/text()=\"Stars:\"]/a/span/text()|//*[@id=\"title-overview-widget\"]/div[3]/div[2]/div[1]/div[h4/text()=\"Star:\" or h4/text()=\"Stars:\"]/span/a/span/text()"
+			},
+			{
+				"colName": "Language",
+				"xPathString": "//*[@id=\"titleDetails\"]/div[h4/text()=\"Language:\"]/a/text()"
+			},
+			{
+				"colName": "Country",
+				"xPathString": "//*[@id=\"titleDetails\"]/div[h4/text()=\"Country:\"]/a/text()"
+			},
+			{
+				"colName": "Release Date",
+				"xPathString": "//*[@id=\"titleDetails\"]/div[h4/text()=\"Release Date:\"]/text()"
+			},
+			{
+				"colName": "Filming Location",
+				"xPathString": "//*[@id=\"titleDetails\"]/div[h4/text()=\"Filming Locations:\"]/a/text()"
+			},
+			{
+				"colName": "Description",
+				"xPathString": "//div[@class=\"summary_text\"]/text()|//*[@id=\"overview-top\"]/p[2]/text()"
+			},
+			{
+				"colName": "Story",
+				"xPathString": "//*[@id=\"titleStoryLine\"]/div[1]/p/text()"
+			}
+		]
+}

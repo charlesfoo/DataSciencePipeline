@@ -1,0 +1,26 @@
+{
+    "save_html_to_directory": false,
+    "save_data_to_csv": true,
+    "allowed_domains": ["www.rottentomatoes.com"],
+    "start_urls": ["http://www.rottentomatoes.com/"],
+    "csv_output_file": "Rotten_scrape_data.csv",
+    "html_directory_name": "Rotten_html_files",
+    "save_file_regex": "([^/]+)\\/?$",
+    "remove_url_query": true,
+    "deny_page_regex": [],
+    "allow_page_regex": ["\\/m\\/[^/]+\\/?$"],
+    "randomize_download_delay": 1,
+    "download_delay": 0.1,
+    "depth_priority": 1,
+	"data_extract_path": 
+		[
+			{
+				"colName": "Title",
+				"xPathString": "//*[@id=\"heroImageContainer\"]/a/h1/text()"
+			},
+			{
+				"colName": "Tomatometer",
+				"xPathString": "//*[@class=\"tab-pane\"]/div/div[1]/div/div[1]/a[@id=\"tomato_meter_link\"]/span[2]/span/text()"
+			}
+		]
+}

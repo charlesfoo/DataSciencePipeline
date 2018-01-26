@@ -1,0 +1,50 @@
+{	
+	"save_html_to_directory": true,
+	"save_data_to_csv": true,
+	"allowed_domains": ["www.caranddriver.com"],
+	"start_urls": ["http://www.caranddriver.com/lamborghini"],
+	"csv_output_file": "cars.csv",
+	"html_directory_name": "HTMLFiles",
+	"save_file_regex": "([^/]+/[^/]+)$",
+	"remove_url_query": true,
+	"deny_page_regex": ["/news/", "/list-", "/photo-gallery/", "/reviews/", "/features/"],
+	"allow_page_regex": "/[^/]+/[^/]+$",
+	"randomize_download_delay": 0,
+	"download_delay": 0,
+	"depth_priority": 1,
+	"data_extract_path": 
+		[
+			{
+				"colName": "Name",
+				"xPathString": "//h1[@class=\"model-name\"]/text()"
+			},
+			{
+				"colName": "Category",
+				"xPathString": "//*[@id=\"breadcrumb-make\"]/div/a/span/text()"
+			},
+			{
+				"colName": "Price",
+				"xPathString": "//*[@id=\"AccuPaymentTool\"]/div[1]/div[2]/span[1]/text()"
+			},
+			{
+				"colName": "EPA",
+				"xPathString": "//*[@id=\"performance-data\"]/div[2]/div[2]/div[1]/span/text()"
+			},
+			{
+				"colName": "0-60",
+				"xPathString": "//*[@id=\"performance-data\"]/div[2]/div[2]/div[2]/span/text()"
+			},
+			{
+				"colName": "HP",
+				"xPathString": "//*[@id=\"performance-data\"]/div[2]/div[2]/div[3]/span/text()"
+			},
+			{
+				"colName": "Top Speed",
+				"xPathString": "//*[@id=\"performance-data\"]/div[2]/div[2]/div[4]/span/text()"
+			},
+			{
+				"colName": "Description",
+				"xPathString": "//*[@id=\"performance-data\"]/div[1]/text()"
+			}
+		]
+}
