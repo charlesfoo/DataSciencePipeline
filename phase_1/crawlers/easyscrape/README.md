@@ -1,4 +1,6 @@
 # easyscrape
+(easyscrape was being written by group member [Wayne Chew](https://github.com/xpheal) to scrap IMDB)
+
 Easy to use web scraper  
 
 Things you can do with it:  
