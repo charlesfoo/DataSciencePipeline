@@ -5,7 +5,7 @@
 
 Written 2 web crawlers (EasyScrape for IMDB and ScrapeOff for Rotten Tomatoes) to scrap data from IMDB and Rotten Tomatoes, then extract target data from the HTML files scrapped, and store them in 2 separate CSV files.
 
-#### Phase 2: Perform data transformation, cleaning and visualisation
+#### Phase 2: Data transformation, cleaning and visualisation
 
 * Write codes to calculate the percentage of missing values, and propose solutions to fill up the missing values.
 
@@ -15,7 +15,7 @@ Written 2 web crawlers (EasyScrape for IMDB and ScrapeOff for Rotten Tomatoes) t
 
 * Write codes to transform 2 tables to have the same schema to prepare for blocking and entity matching.
 
-#### Phase 3. Perform blocking on data to reduce the number of tuple pairs matched
+#### Phase 3. Blocking on data to reduce the number of tuple pairs matched
 
 *Note: Blocking is not the same as matching. The purpose of blocking is to get rid of as many tuples that are clearly not 
 matched. For example, given table A and table B, each having 1000 tuples, we will not want to match 1 million tuples in the 
@@ -28,7 +28,7 @@ Cartesian Product. Blocking serves the purpose of reducing the number of pairs w
 * Ensure that there's no false negative (leaking out positive data) by randomly sampling several tuples and checking them 
   against golden data.
 
-#### Phase 4: Perform entity matching
+#### Phase 4: Entity matching
 
 * Creates golden data and fills up null values
 
