@@ -1,5 +1,5 @@
 # easyscrape
-(easyscrape is being written by group member [Wayne Chew](https://github.com/xpheal) to scrap IMDB)
+(easyscrape was being written by group member [Wayne Chew](https://github.com/xpheal) to scrap IMDB)
 
 Easy to use web scraper  
 
